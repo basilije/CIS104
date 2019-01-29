@@ -1,4 +1,4 @@
-primes = []
+primes = [2]
 
 for testNum in range(3,1001):
 	for divisor in range(2, testNum):
