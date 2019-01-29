@@ -1,4 +1,3 @@
-import math
 numberRange = range(3,1001)
 primes = []
 
