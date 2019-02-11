@@ -15,7 +15,7 @@ else:
 	print("This book is at least ten years old.")  # If book's age is over 10 years
 	
 # Print the sentence that depends of number of pages in the book	
-if total_number_of_pages_in_the_book<100:
+if total_number_of_pages_in_the_book < 100:
 	print("This book is a short book.")  # If the number of pages is below 100
 elif total_number_of_pages_in_the_book < 300:
 	print("This book is an average book.")  # If the number of pages is between 100 and 300
