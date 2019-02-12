@@ -23,8 +23,7 @@ while key_pressed != 'X':
             if key_pressed == ".":
                 if not(first_dot_is_entered):
                     print(key_pressed, end="")   
-                    first_dot_is_entered = True
-                      
+                    first_dot_is_entered = True                 
         else:
             if key_pressed != "." or not(second_dot_is_entered):
                 second_text += key_pressed
@@ -35,7 +34,6 @@ while key_pressed != 'X':
                     print(key_pressed, end="")
                     second_dot_is_entered = True
                
-
     if key_pressed in ["+", "-", "*", "/", "^"] and entering_number == 1:
         operation = key_pressed
         entering_number = 2
@@ -59,14 +57,7 @@ while key_pressed != 'X':
 
     if key_pressed == "R":
         if entering_number == 1:
-            first_text = ""
-            second_text = ""
-            entering_number = 1
-            first_dot_is_entered = False
-            second_dot_is_entered = False
-            operation = ""
-            key_pressed = ""
-            
+            resetVariables()            
             first_text = memory_text
             print("\n=", first_text, end="")
 
