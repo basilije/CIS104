@@ -11,6 +11,7 @@ def resetVariables():
     key_pressed = ""
 
 resetVariables()
+
 while key_pressed != 'X':
     key_pressed= str(msvcrt.getch().decode("utf-8")).upper()
     if (key_pressed >="0" and key_pressed <="9") or key_pressed == ".":
