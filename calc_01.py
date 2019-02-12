@@ -79,11 +79,6 @@ while key_pressed != 'X':
             result = float(first_text) ** float(second_text)
         if result != "":
             print("\n=", result, end="")
-
-            entering_number = 1
-            first_dot_is_entered = False
-            second_dot_is_entered = False
-            operation = ""
-            key_pressed = ""            
+            resetVariables()           
             first_text = str(result)
-            second_text = ""
+
