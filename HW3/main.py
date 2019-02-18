@@ -22,6 +22,7 @@ def printWithoutNewRowAtTheEnd(anything):
 	sys.stdout.write(str_anything)
 	sys.stdout.flush()
 
+	
 # clear the current printing row
 def cleanRow():
 	printWithoutNewRowAtTheEnd('\r                                 \r')
