@@ -46,7 +46,7 @@ def calculate(num_str, operator):
 			setCurrentValue(result)  # set the current_value variable to the value of result
 	except:  # if something went wrong
 		printAndBeepError() # print and beep error
-	return str(result)
+	return str(result)  # also return the result as string
 
 	
 # function that convert string to number with or without decimals if possible
