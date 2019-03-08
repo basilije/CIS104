@@ -20,27 +20,22 @@ def music(choice):
         new['track'] = input('Enter track #: ')
         new['input']= input('Enter year: ')
         new['genre'] = input('Enter genre: ')
-        if len(masterlist) <= 7:
+        if len(masterlist) <= 7: 
             masterlist.append(new)
         else:
             print("That's to many songs ya chode!!")
-        #return True
         
     if choice == 'list':
         for things in masterlist:
-            #print(masterlist.items())
             for keys,values in things.items():
                 print(f'{keys} is {values}')
-        #return True
 
     if choice == 'save':
         with open(mydatafile, 'w') as f:
             json.dump(masterlist, f)
-        #return True
 
     if choice == 'help':
         print("this is the help")
-        #return True
 
     if choice == 'exit':
         sys.exit()
